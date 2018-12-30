@@ -1,5 +1,6 @@
 package domain;
 
+
 public class AccountBean {
 	private String accountNum,today;
 	private int money;
@@ -23,8 +24,8 @@ public class AccountBean {
 	}
 	@Override
 	public String toString() {
-		return "AccountBean [accountNum=" + accountNum + ", today=" + today + ", money=" + money + ", getAccountNum()="
-				+ getAccountNum() + ", getToday()=" + getToday() + ", getMoney()=" + getMoney() + "]";
+		
+		return " [계좌번호 : " + accountNum + ",\n 날짜 : " + today + ", 출금가능금액 : " + money + "]";
 	}
 	
 }
