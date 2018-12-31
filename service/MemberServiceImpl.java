@@ -41,14 +41,34 @@ public class MemberServiceImpl implements MemberService {
 	 **************************************************/
 	@Override
 	public MemberBean[] findName(String name) {
-		 return null;
+		 for(int i=0;i<count;i++) {
+			if(beans[i].getName().equals(name)) {
+				same++;
+			}
+		}
+		System.out.println(same);
+		MemberBean[] members = new MemberBean[same];
+		int j=0;
+		for(int i=0;i<count;i++) {
+			if(beans[i].getName().equals(name)) {
+				members[j] = beans[i];
+				j++;
+				if(j==members.length) {
+					break;
+				}
+			}
+		}
+		return members;
 		 
+
+		
+	}	
 /*
  *4번 아이디로 내정보찾기
  */ 
 		
 
-	}
+	
 
 	@Override
 	public MemberBean findId(String id) {
