@@ -22,7 +22,7 @@ public class MemberServiceImpl implements MemberService {
 		memberBean.setSsn(ssn);
 		members[count] = memberBean;
 		count++;
-		// 값을 돌려받지않는이유는 단순히 저장만하기때문?
+		
 	}
 
 /*
